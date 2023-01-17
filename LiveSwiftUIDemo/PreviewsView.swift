@@ -21,7 +21,7 @@ struct PreviewsView: View {
             Text("Hello, World!")
         }
         .toolbar {
-            ShareLink(item: LSProject(title: "你好", author: "haren724", version: "1.0", size: .iphone11, content: []), preview: SharePreview("AppStudio Project", icon: Image(systemName: "person")))
+            ShareLink(item: LSProject(title: "你好", author: "haren724", version: "1.0", size: .iphone11, content: []), preview: SharePreview("AppStudio Project\nnihao", icon: Image("AppIcon")))
         }
     }
 }

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911993322976DB3000CE697C /* LiveSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 911993312976DB3000CE697C /* LiveSwiftUI */; };
 		9180C2B2296D9F410013852F /* LiveSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180C2B1296D9F410013852F /* LiveSwiftUIDemoApp.swift */; };
 		9180C2B6296D9F440013852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9180C2B5296D9F440013852F /* Assets.xcassets */; };
 		9180C2BA296D9F440013852F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9180C2B9296D9F440013852F /* Preview Assets.xcassets */; };
 		9180C2C4296D9F450013852F /* LiveSwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180C2C3296D9F450013852F /* LiveSwiftUIDemoTests.swift */; };
 		9180C2CE296D9F450013852F /* LiveSwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180C2CD296D9F450013852F /* LiveSwiftUIDemoUITests.swift */; };
 		9180C2D0296D9F450013852F /* LiveSwiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180C2CF296D9F450013852F /* LiveSwiftUIDemoUITestsLaunchTests.swift */; };
-		9180C2E0296DA0660013852F /* LiveSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9180C2DF296DA0660013852F /* LiveSwiftUI */; };
 		918AB2C1296F097B00ECF689 /* PreviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918AB2C0296F097B00ECF689 /* PreviewsView.swift */; };
 		91E8258E296EF0C700ED399E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8258D296EF0C700ED399E /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911993302976DB2100CE697C /* LiveSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LiveSwiftUI; path = ../LiveSwiftUI; sourceTree = "<group>"; };
 		9180C2AE296D9F410013852F /* LiveSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9180C2B1296D9F410013852F /* LiveSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		9180C2B5296D9F440013852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		9180C2C9296D9F450013852F /* LiveSwiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveSwiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9180C2CD296D9F450013852F /* LiveSwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		9180C2CF296D9F450013852F /* LiveSwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9180C2DD296D9F9C0013852F /* LiveSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LiveSwiftUI; path = ../LiveSwiftUI; sourceTree = "<group>"; };
 		918AB2C0296F097B00ECF689 /* PreviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewsView.swift; sourceTree = "<group>"; };
 		919BD126296DA5C0000988AC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		91E8258D296EF0C700ED399E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9180C2E0296DA0660013852F /* LiveSwiftUI in Frameworks */,
+				911993322976DB3000CE697C /* LiveSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9119932F2976DB2100CE697C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				911993302976DB2100CE697C /* LiveSwiftUI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		9180C2A5296D9F410013852F = {
 			isa = PBXGroup;
 			children = (
-				9180C2DC296D9F9C0013852F /* Packages */,
+				9119932F2976DB2100CE697C /* Packages */,
 				9180C2B0296D9F410013852F /* LiveSwiftUIDemo */,
 				9180C2C2296D9F450013852F /* LiveSwiftUIDemoTests */,
 				9180C2CC296D9F450013852F /* LiveSwiftUIDemoUITests */,
@@ -138,14 +146,6 @@
 			path = LiveSwiftUIDemoUITests;
 			sourceTree = "<group>";
 		};
-		9180C2DC296D9F9C0013852F /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				9180C2DD296D9F9C0013852F /* LiveSwiftUI */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		9180C2DE296DA0660013852F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +171,7 @@
 			);
 			name = LiveSwiftUIDemo;
 			packageProductDependencies = (
-				9180C2DF296DA0660013852F /* LiveSwiftUI */,
+				911993312976DB3000CE697C /* LiveSwiftUI */,
 			);
 			productName = LiveSwiftUIDemo;
 			productReference = 9180C2AE296D9F410013852F /* LiveSwiftUIDemo.app */;
@@ -643,7 +643,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9180C2DF296DA0660013852F /* LiveSwiftUI */ = {
+		911993312976DB3000CE697C /* LiveSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LiveSwiftUI;
 		};

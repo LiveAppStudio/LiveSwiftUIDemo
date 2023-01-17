@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "304x304bb-80.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -26,11 +27,13 @@
       "size" : "32x32"
     },
     {
+      "filename" : "304x304bb-80 2.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "304x304bb-80 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
