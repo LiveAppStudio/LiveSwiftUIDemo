@@ -5,6 +5,7 @@
 //  Created by 陈驰坤 on 2023/1/11.
 //
 
+import SwiftUI
 import LiveSwiftUI
 
 struct PreviewsView: View {
@@ -14,6 +15,11 @@ struct PreviewsView: View {
     init(jsonData json: Data) {
         self.jsonData = json
         self._previewProvider = StateObject(wrappedValue: LSPreview(project: json))
+        let navibarAppearance = UINavigationBarAppearance()
+        navibarAppearance.configureWithOpaqueBackground()
+        navibarAppearance.backgroundColor = .secondarySystemBackground
+        UINavigationBar.appearance().standardAppearance = navibarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navibarAppearance
     }
     
     var body: some View {
